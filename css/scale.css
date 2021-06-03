@@ -1,0 +1,31 @@
+
+* {
+    box-sizing: border-box;
+  }
+/* Create two equal columns that floats next to each other */
+.parameter {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-style: inset;
+  }
+.plot{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    border-style: inset;
+}
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h2 {text-align: center;}
+
+  .base_canvas{
+      width: 1000;
+      height: 500;
+      border-style: groove;
+  }

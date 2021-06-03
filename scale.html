@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/scale.css">
+        <script src="js/scale.js"></script>
+    </head>
+
+    <body onload="drawPlot();">
+        <div class="row">
+            <div class="parameter">
+              <h2><u>Bot Parameters</u></h2>
+              <form method="GET">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price"><br><br>
+                <label for="base_order">Base order:</label>
+                <input type="number" id="base_order" name="base_order"><br><br>
+                <label for="safty_order">Safty order:</label>
+                <input type="number" id="safty_order" name="safty_order"><br><br>
+                <label for="target_profit">Taget profit:</label>
+                <input type="number" id="target_profit" name="target_profit"><br><br>
+                <label for="max_safty_orders">Maximum safty orders:</label>
+                <input type="number" id="max_safty_orders" name="max_safty_orders"><br><br>
+                <label for="safty_order_price_deviation">Safty order price deviation:</label>
+                <input type="number" id="safty_order_price_deviation" name="safty_order_price_deviation"><br><br>
+                <label for="safty_order_volume_scale">Safty order volume scale:</label>
+                <input type="number" id="safty_order_volume_scale" name="safty_order_volume_scale"><br><br>
+                <label for="safty_order_step_scale">Safty order step scale:</label>
+                <input type="number" id="safty_order_step_scale" name="safty_order_step_scale"><br><br>
+                <input type="button" value="Submit" onclick="readBotProperties();">
+                </form>
+            </div>
+            <div class="plot">
+              <h2><u>Plot</u></h2>
+              <canvas id = "base_canvas" class="base_canvas" width="1000" height="500" style="border:1px solid #d3d3d3;">
+                Your browser doesn’t currently support HTML5 Canvas. Please check caniuse.com/#feat=canvas for information on browser support for canvas.
+              </canvas>
+
+            </div>
+          </div>
+    </body>
+</html>
